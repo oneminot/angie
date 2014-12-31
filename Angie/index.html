@@ -1,21 +1,22 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" data-ng-app>
+<html lang="en" data-ng-app="HelloWorld">
 <head>
     <meta charset="utf-8" />
-    <title>TypeScript HTML App</title>
+    <title>Hello, Angie!</title>
     <link rel="stylesheet" href="app.css" type="text/css" />
     <script src="app.js"></script>
 </head>
 <body>
+    <script src="angular.js"></script>
+    <script src="HelloWorldController.js"></script>
     <h1>TypeScript HTML App</h1>
 
     <div id="content"></div>
-    <div data-ng-controller="HelloWorldController">
-
+    <div>
+        <p>I am {{ 4 + 6 }}. </p>
     </div>
-    <script src="angular.js"></script>
-    <script src="HelloWorldController.js"></script>
+
     <!--<script src="angular.min.js"></script>-->
 </body>
 </html>
